@@ -5,6 +5,8 @@ To get started, download the latest release and create a config file as seen bel
 
 This also requires a discord webhook to be created. For instructions on creating a webhook visit https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
 
+.NET 7.0 must be installed as a pre-requisite
+
 ## Config
 
 Requires a config file to be created and saved as `discord-screenshotter-dotnet.dll.config` in the same directory as the .exe
