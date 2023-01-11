@@ -1,7 +1,11 @@
 ﻿# discord-screenshotter-dotnet
 Periodically opens windows with a given name and sends screenshots of them to a discord webhook
+# Get Started
+To get started, download the latest release and create a config file as seen below.
 
-# Config
+This also requires a discord webhook to be created. For instructions on creating a webhook visit https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+
+## Config
 
 Requires a config file to be created and saved as `discord-screenshotter-dotnet.dll.config` in the same directory as the .exe
    ```xml
@@ -15,7 +19,7 @@ Requires a config file to be created and saved as `discord-screenshotter-dotnet.
     </configuration>
 ```
     
-# Running on a Remote Desktop Connection (RDP)
+## Running on a Remote Desktop Connection (RDP)
 When ending a RDP session the GUI session ends and therefore screenshots cannot be taken. This can be worked around using the batch file below which runs the screenshotter then ends the RDP session whilst keeping the GUI session alive. Save the file below as a `.bat` file in the same directory as the .exe.
    ```bat
    for /f "skip=1 tokens=3" %%s in ('query user %USERNAME%') do (tscon.exe %%s /dest:console)
